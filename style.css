@@ -6,14 +6,16 @@
 }
 
 main {
-    width: 70vw;
-    height: 80vh;
+    width: 44rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: relative;
+    margin-top: 5rem;
 
 
 }
@@ -46,5 +48,11 @@ main {
     width: 8rem;
     font-size: 1.1rem;
     color: white;
+
+}
+
+.scriptcontents {
+    width: 70vw;
+
 
 }
