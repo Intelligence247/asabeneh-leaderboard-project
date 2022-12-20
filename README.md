@@ -9,7 +9,7 @@
 - Css
 - JavaScript
 ## Preview here
-[Go Live](dulcet-meerkat-f8908d.netlify.app)
+[Go Live](https://dulcet-meerkat-f8908d.netlify.app/)
 
 ![screenshot](./media/sketch.png)
 ## Contact
