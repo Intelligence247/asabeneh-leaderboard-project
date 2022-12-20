@@ -29,7 +29,7 @@ let lastname = document.querySelector('#lastname')
 let country = document.querySelector('#country')
 let score = document.querySelector('#score')
 let scriptcontents = document.querySelector('#scriptcontents')
-
+let err = document.querySelector('#err')
 
 
 
@@ -49,7 +49,10 @@ add.addEventListener('click', (e) => {
 
         }
     ]
+    console.log(obj[0].score.length)
+
     for (const c of obj) {
+
         let section = document.createElement('section')
         let divleft = document.createElement('div')
         let name = document.createElement('p')
@@ -147,7 +150,12 @@ add.addEventListener('click', (e) => {
         section.style.alignItems = 'center'
         section.style.padding = '0.2rem 3rem 0.2rem 1rem'
         scriptcontents.appendChild(section)
-
+        if (obj[0].fname.length == 0 || obj[0].lname.length == 0 || obj[0].country.length == 0 || obj[0].score.length == 0) {
+            err.textContent = 'All field required'
+            section.style.display = 'none'
+        } else {
+            err.style.display = 'none'
+        }
 
         forimg.addEventListener('click', () => {
             section.style.display = 'none'
@@ -158,6 +166,5 @@ add.addEventListener('click', (e) => {
         minus.addEventListener('click', () => {
             score.textContent = parseInt(c.score) - 5
         })
-
     }
 })
