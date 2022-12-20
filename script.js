@@ -153,6 +153,7 @@ add.addEventListener('click', (e) => {
         if (obj[0].fname.length == 0 || obj[0].lname.length == 0 || obj[0].country.length == 0 || obj[0].score.length == 0) {
             err.textContent = 'All field required'
             section.style.display = 'none'
+            err.style.color = 'red'
         } else {
             err.style.display = 'none'
         }
