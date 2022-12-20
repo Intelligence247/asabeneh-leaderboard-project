@@ -97,6 +97,7 @@ add.addEventListener('click', (e) => {
         forimg.style.justifyContent = 'center'
         forimg.style.alignItems = 'center'
         forimg.style.borderRadius = '50%'
+        forimg.style.cursor = 'pointer'
 
 
 
@@ -122,6 +123,7 @@ add.addEventListener('click', (e) => {
         plus.style.alignItems = 'center'
         plus.style.borderRadius = '50%'
         plus.style.fontSize = '0.7rem'
+        plus.style.cursor = 'pointer'
 
         // minus
         minus.style.background = 'white'
@@ -132,6 +134,7 @@ add.addEventListener('click', (e) => {
         minus.style.alignItems = 'center'
         minus.style.borderRadius = '50%'
         minus.style.fontSize = '0.7rem'
+        minus.style.cursor = 'pointer'
 
 
         // section
