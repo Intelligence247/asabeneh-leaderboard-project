@@ -32,23 +32,23 @@ let scriptcontents = document.querySelector('#scriptcontents')
 
 
 
-let obj = [
-    // { fname: firstname.value, lname: 'YOHANES', country: 'FINLAND', score: 85, delete: './media/del.png', plus: '+5', minus: '-5', date: dateInfo },
-    {
-        fname: firstname.value,
-        lname: lastname.value,
-        country: country.value,
-        score: score.value,
-        delete: './media/del.png',
-        plus: '+5', minus: '-5',
-        date: dateInfo,
 
-
-    }
-]
 
 add.addEventListener('click', (e) => {
+    let obj = [
+        // { fname: firstname.value, lname: 'YOHANES', country: 'FINLAND', score: 85, delete: './media/del.png', plus: '+5', minus: '-5', date: dateInfo },
+        {
+            fname: firstname.value,
+            lname: lastname.value,
+            country: country.value,
+            score: score.value,
+            delete: './media/del.png',
+            plus: '+5', minus: '-5',
+            date: dateInfo,
 
+
+        }
+    ]
     for (const c of obj) {
         let section = document.createElement('section')
         let divleft = document.createElement('div')
@@ -149,9 +149,12 @@ add.addEventListener('click', (e) => {
         forimg.addEventListener('click', () => {
             section.style.display = 'none'
         })
-        // plus.addEventListener('click', () => {
-        //     score
-        // })
+        plus.addEventListener('click', () => {
+            score.textContent = parseInt(c.score) + 5
+        })
+        minus.addEventListener('click', () => {
+            score.textContent = parseInt(c.score) - 5
+        })
 
     }
 })
