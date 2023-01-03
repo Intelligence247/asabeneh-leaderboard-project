@@ -32,8 +32,6 @@ let scriptcontents = document.querySelector('#scriptcontents')
 let err = document.querySelector('#err')
 
 
-
-
 add.addEventListener('click', (e) => {
     let obj = [
         // { fname: firstname.value, lname: 'YOHANES', country: 'FINLAND', score: 85, delete: './media/del.png', plus: '+5', minus: '-5', date: dateInfo },
@@ -162,10 +160,14 @@ add.addEventListener('click', (e) => {
             section.style.display = 'none'
         })
         plus.addEventListener('click', () => {
-            score.textContent = parseInt(c.score) + 5
+            let plus5 = parseInt(score.textContent)
+            plus5 += 5
+            score.textContent = plus5
         })
         minus.addEventListener('click', () => {
-            score.textContent = parseInt(c.score) - 5
+            let minu5 = parseInt(score.textContent)
+            minu5 -= 5
+            score.textContent = minu5
         })
     }
 })
